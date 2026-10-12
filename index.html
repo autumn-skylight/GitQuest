@@ -1,107 +1,86 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannah-plays</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" 
-rel="stylesheet">
-<script src="https://kit.fontawesome.com/b462bf7f1d.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" href="assets/images/youtube-pfp.jpg" />
-    <script src="assets/js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannah Plays</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" href="assets/images/youtube-pfp.jpg" />
 </head>
 <body>
-  <nav>
+  <nav class="site-nav" aria-label="Main navigation">
     <div class="logo">
-      <picture>
-        <img src="/assets/images/youtube-pfp.jpg">
-      </picture>
-  </div>
-      <div class="hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="index.html#about">about</a></li>
-          <li><a href="index.html#video">Latest-video</a></li>
-          <li><a href="https://youtube.com/@autumnskyy_plays">channel</a></li>
-      </ul>
+      <img src="assets/images/youtube-pfp.jpg" alt="Hannah Plays logo" />
+    </div>
+
+    <div class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a class="active" href="#top">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">Channel</a></li>
+    </ul>
   </nav>
-  <img
-class="bg"
-alt=""
-src="/assets/images/hannah-plays-banner.png"
-draggable="false"
-/>
-  <h1 class="index_h1"> Hello, Welcome to Hannah-plays</h1>
-  <h2 class="index_welcome_text"> Gaming walkthough/ episode Youtube channel</h2>
 
+  <main class="page-shell" id="top">
+    <header class="hero">
+      <div class="hero-panel">
+        <div>
+          <h1>Hello, My name is Hannah</h1>
+          <h2>Gaming walkthroughs &amp; YouTube creator</h2>
+        </div>
+      </div>
+    </header>
 
-  <section id="about" class="index_about_section">
-<h1 class="index_about_h1"> About my Channel</h1>
-<div class="container">
-  <div class="image">
-    <img src="/assets/images/youtube-pfp.jpg">
-  </div>
-  <div class="index_about_text">
-    <p class="about_text_p">At first I started recording GTA 5 videos which later
-      expanded to Me recording <br> Minecraft PS4 Video and then
-      after a few months I started recording other games<br> 
-      including The sims 4, Resident evil and Beatsaber 
-		</p>
-    <div class="index_about_text">
-      <h2 class="index_about_h2">about myself (the creator)</h2>
-      <p>Hello, my name is Hannah, 	<br>
-        -I am a young carer <br>
-        -I am also a web developer and an ex Youtuber </p>
-    
-       <div class="text_placement"> 
-         <h2 class="h2_about_text">you can found out more about me </h2>
-        <div class="about_links_placement">
-         <div class="about_link_placement">
-             <svg class="about_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg>
-          <a href="https://hannahcodes.co.uk/about/about.html" class="projects_links">here</a></div>
-  
+    <section class="about" id="about">
+      <div class="about-card">
+        <img src="assets/images/youtube-pfp.jpg" alt="Hannah Plays avatar" />
+
+        <div class="about-copy">
+          <h3>About Me</h3>
+          <p>
+            Hello, welcome to Hannah Plays. I am a young carer, web developer, and former YouTuber sharing gameplay videos and gaming adventures.
+          </p>
+          <p>
+            I record GTA 5, Minecraft, The Sims 4, Resident Evil, and more. I’m also a web developer with a love for design and creativity.
+          </p>
+          <div class="more">
+            <span>You can find out more about me</span>
+            <a href="https://hannahcodes.co.uk/about/about.html" target="_blank" rel="noreferrer">here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest" id="video">
+      <h3>Latest video</h3>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/QtCrce-6GHk" title="Latest video from Hannah Plays" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="assets/images/youtube-pfp.jpg" alt="Hannah Plays footer logo" />
+        <span>Hannah Plays</span>
+      </div>
+
+      <div class="footer-links">
+        <span>copyright hannah plays 2026</span>
+        <a href="mailto:hannah@hannahcodes.co.uk">contact me</a>
+        <a href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">channel</a>
       </div>
     </div>
-  </div>
-   </div>
-   </div>
-  
+  </footer>
 
-  </section>
-    <section class="index_video_section">
-    <h1 id="Latest-video">My Latest video</h1>
-    <div class="wrapper">
-      <div class="videowrapper">
-      <iframe
-      src="https://www.youtube.com/embed/QtCrce-6GHk"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe> 
-    </div>
-  </div>
-    </section>
-    <footer> <div class="footer_display">
-      <div class="footer_logo">
-        <picture>
-          <img src="/assets/images/youtube-pfp.jpg">
-        </picture>
-        </div>
-        <p class="desktop">copyright hannahplays 2022</p>
-      <p class="mobile">copyright hannahplays 2022</p>
-  </div>
-    </footer>
-      <script src="/assets/js/nav.js"></script>
+  <script src="assets/js/nav.js"></script>
 </body>
 </html>
-
-
-
-
