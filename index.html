@@ -1,86 +1,151 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hannah Plays</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="description" content="GitQuest is a channel for coding, gaming, and the fun adventures in between." />
+  <title>GitQuest — Code. Play. Repeat.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="assets/images/youtube-pfp.jpg" />
 </head>
+
 <body>
   <nav class="site-nav" aria-label="Main navigation">
-    <div class="logo">
-      <img src="assets/images/youtube-pfp.jpg" alt="Hannah Plays logo" />
-    </div>
+    <a class="brand" href="#top" aria-label="GitQuest home">
+      <span class="brand-mark" aria-hidden="true"><span>&lt;</span><i>/</i><span>&gt;</span></span>
+      <span>Git<span class="brand-accent">Quest</span></span>
+    </a>
 
-    <div class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a class="active" href="#top">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">Channel</a></li>
+      <li><a href="#about">The channel</a></li>
+      <li><a href="#video">Latest video</a></li>
+      <li><a class="nav-cta" href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a></li>
     </ul>
   </nav>
 
-  <main class="page-shell" id="top">
-    <header class="hero">
-      <div class="hero-panel">
-        <div>
-          <h1>Hello, My name is Hannah</h1>
-          <h2>Gaming walkthroughs &amp; YouTube creator</h2>
+  <main id="top">
+    <section class="hero page-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> YOUR NEXT SIDE QUEST STARTS HERE</p>
+        <h1 id="hero-title">Welcome to<br /><span class="title-highlight">GitQuest</span><span class="title-cursor" aria-hidden="true">_</span></h1>
+        <p class="hero-tagline">Code. Play. Repeat.</p>
+        <p class="hero-description">A channel for coding, gaming, and everything creative in between. Come for the code, stay for the quests.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">Explore the channel <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#about"><span class="play-icon" aria-hidden="true">▶</span> What is GitQuest?</a>
         </div>
+        <div class="hero-note"><span aria-hidden="true">✳</span> New adventures, one video at a time</div>
       </div>
-    </header>
 
-    <section class="about" id="about">
-      <div class="about-card">
-        <img src="assets/images/youtube-pfp.jpg" alt="Hannah Plays avatar" />
-
-        <div class="about-copy">
-          <h3>About Me</h3>
-          <p>
-            Hello, welcome to Hannah Plays. I am a young carer, web developer, and former YouTuber sharing gameplay videos and gaming adventures.
-          </p>
-          <p>
-            I record GTA 5, Minecraft, The Sims 4, Resident Evil, and more. I’m also a web developer with a love for design and creativity.
-          </p>
-          <div class="more">
-            <span>You can find out more about me</span>
-            <a href="https://hannahcodes.co.uk/about/about.html" target="_blank" rel="noreferrer">here</a>
+      <div class="quest-art" aria-label="A coding terminal surrounded by colorful game-inspired shapes">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✳</div>
+        <div class="quest-window">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>gitquest.exe</span>
+            <span class="window-menu" aria-hidden="true">···</span>
           </div>
+          <div class="terminal-content">
+            <p class="terminal-comment">// choose your adventure</p>
+            <p><span class="terminal-purple">const</span> quest = <span class="terminal-green">{</span></p>
+            <p class="terminal-indent">code: <span class="terminal-orange">"create"</span>,</p>
+            <p class="terminal-indent">game: <span class="terminal-orange">"play"</span>,</p>
+            <p class="terminal-indent">vibe: <span class="terminal-orange">"always curious"</span></p>
+            <p><span class="terminal-green">}</span><span class="terminal-purple">;</span></p>
+            <p class="terminal-run"><span class="terminal-prompt">&gt;</span> startQuest<span class="terminal-cursor">_</span></p>
+          </div>
+        </div>
+        <div class="pixel-token token-one" aria-hidden="true"><span></span></div>
+        <div class="pixel-token token-two" aria-hidden="true"><span></span></div>
+        <div class="art-label"><span class="label-icon" aria-hidden="true">+</span> LEVEL 01 <span class="label-divider">/</span> LET'S PLAY</div>
+      </div>
+    </section>
+
+    <section class="channel-section" id="about">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="heading-slash">//</span> PICK YOUR PATH</p>
+          <h2>Two worlds. <span>One channel.</span></h2>
+          <p>Whether you're building something new or jumping into a new game, there's a quest for you.</p>
+        </div>
+
+        <div class="path-grid">
+          <article class="path-card path-code">
+            <div class="path-topline"><span class="path-icon code-icon" aria-hidden="true">&lt;/&gt;</span><span class="path-number">01 / CREATE</span></div>
+            <h3>Make cool stuff.</h3>
+            <p>Coding experiments, web projects, and the little wins (and bugs) along the way.</p>
+            <span class="path-decoration code-decoration" aria-hidden="true">{ }</span>
+            <a href="#video" class="path-link">Explore the code <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="path-card path-game">
+            <div class="path-topline"><span class="path-icon game-icon" aria-hidden="true">✦</span><span class="path-number">02 / PLAY</span></div>
+            <h3>Play your way.</h3>
+            <p>Gaming adventures, fun challenges, and plenty of worlds to get lost in.</p>
+            <span class="path-decoration game-decoration" aria-hidden="true">★</span>
+            <a href="#video" class="path-link">Join the game <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <div class="about-strip">
+          <div class="about-avatar"><img src="assets/images/youtube-pfp.jpg" alt="GitQuest creator" /></div>
+          <div class="about-copy">
+            <p class="eyebrow">THE PLAYER BEHIND THE SCREEN</p>
+            <h3>Hey, I'm Hannah.</h3>
+            <p>Web developer, gamer, and creative at heart. GitQuest is where my love of making things meets my love of playing them.</p>
+          </div>
+          <a class="about-link" href="https://hannahcodes.co.uk/about/about.html" target="_blank" rel="noreferrer">More about me <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="latest" id="video">
-      <h3>Latest video</h3>
+    <section class="latest page-shell" id="video">
+      <div class="latest-heading">
+        <div>
+          <p class="eyebrow"><span class="heading-slash">//</span> FRESH FROM THE QUEST</p>
+          <h2>Latest <span>video</span></h2>
+        </div>
+        <a class="text-link" href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">More on YouTube <span aria-hidden="true">↗</span></a>
+      </div>
       <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/QtCrce-6GHk" title="Latest video from Hannah Plays" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/QtCrce-6GHk" title="Latest video from GitQuest"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-logo">
-        <img src="assets/images/youtube-pfp.jpg" alt="Hannah Plays footer logo" />
-        <span>Hannah Plays</span>
-      </div>
-
+      <a class="brand footer-brand" href="#top" aria-label="GitQuest home">
+        <span class="brand-mark" aria-hidden="true"><span>&lt;</span><i>/</i><span>&gt;</span></span>
+        <span>Git<span class="brand-accent">Quest</span></span>
+      </a>
+      <p>Made for the curious. <span aria-hidden="true">✳</span></p>
       <div class="footer-links">
-        <span>copyright hannah plays 2026</span>
-        <a href="mailto:hannah@hannahcodes.co.uk">contact me</a>
-        <a href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">channel</a>
+        <span>© GitQuest 2026</span>
+        <a href="mailto:hannah@hannahcodes.co.uk">Get in touch</a>
+        <a href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">YouTube ↗</a>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/nav.js"></script>
 </body>
+
 </html>
