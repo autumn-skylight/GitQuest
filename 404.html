@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="description" content="This quest couldn't find its way. Head back to GitQuest and choose another adventure." />
+  <title>404 — Quest not found | GitQuest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/GitQuest/youtube-pfp.jpg" />
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html#top" aria-label="GitQuest home">
+      <span class="brand-mark" aria-hidden="true"><span>&lt;</span><i>/</i><span>&gt;</span></span>
+      <span>Git<span class="brand-accent">Quest</span></span>
+    </a>
+
+    <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a class="active" href="index.html#top">Home</a></li>
+      <li><a href="index.html#about">The channel</a></li>
+      <li><a href="index.html#video">Latest video</a></li>
+      <li><a class="nav-cta" href="https://youtube.com/@autumnskyy_plays" target="_blank" rel="noreferrer">Watch on
+          YouTube <span aria-hidden="true">↗</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="not-found-page">
+    <div class="error-terminal quest-window" aria-hidden="true">
+      <div class="window-bar">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <span>gitquest.exe</span>
+        <span class="window-menu">···</span>
+      </div>
+      <div class="terminal-content">
+        <p class="terminal-comment">// looking for this page...</p>
+        <p><span class="terminal-purple">const</span> page = <span class="terminal-green">{</span></p>
+        <p class="terminal-indent">found: <span class="terminal-orange">false</span>,</p>
+        <p class="terminal-indent">nextQuest: <span class="terminal-orange">"home"</span></p>
+        <p><span class="terminal-green">}</span><span class="terminal-purple">;</span></p>
+        <p class="terminal-run"><span class="terminal-prompt">&gt;</span> returnHome<span class="terminal-cursor">_</span></p>
+      </div>
+    </div>
+
+    <div class="error-spark error-spark-one" aria-hidden="true">✦</div>
+    <div class="error-spark error-spark-two" aria-hidden="true">✳</div>
+
+    <section class="not-found-content" aria-labelledby="error-title">
+      <p class="eyebrow"><span class="heading-slash">//</span> QUEST LOG: PAGE NOT FOUND</p>
+      <h1 id="error-title">404<span class="error-period" aria-hidden="true">.</span></h1>
+      <h2>Looks like this quest wandered off.</h2>
+      <p class="error-description">The page you're looking for isn't on the map. Let's get you back to a familiar
+        place.</p>
+      <a class="button button-primary" href="index.html#top">Back to the homepage <span
+          aria-hidden="true">↗</span></a>
+    </section>
+
+    <div class="error-footer" aria-hidden="true">
+      <span>MADE FOR THE CURIOUS</span>
+      <span>404 — QUEST NOT FOUND</span>
+    </div>
+  </main>
+
+  <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

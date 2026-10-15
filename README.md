@@ -11,3 +11,4 @@ GitQuest is the home page for Hannah's YouTube channel, bringing coding projects
 - An introduction to Hannah
 - An embedded featured YouTube video
 - Responsive navigation with a toggleable mobile menu
+- A custom 404 page styled to match GitQuest
