@@ -42,7 +42,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+.brand_accent {
+  color: var(--lime);
+}
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--lime);
@@ -132,7 +134,9 @@ img {
   border: 1px solid rgba(196, 243, 107, 0.45);
   border-radius: 8px;
   color: var(--lime);
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .nav-cta:hover {
@@ -159,7 +163,9 @@ img {
   height: 2px;
   border-radius: 2px;
   background: var(--text);
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .hamburger.toggle span:first-child {
@@ -262,7 +268,10 @@ img {
   border-radius: 8px;
   font-size: 0.88rem;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .button:hover {
@@ -318,7 +327,11 @@ img {
   width: 330px;
   height: 330px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(153, 117, 255, 0.19), rgba(153, 117, 255, 0) 68%);
+  background: radial-gradient(
+    circle,
+    rgba(153, 117, 255, 0.19),
+    rgba(153, 117, 255, 0) 68%
+  );
   content: "";
 }
 
@@ -346,7 +359,9 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 13px;
   background: #17181e;
-  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.45), 0 0 55px rgba(157, 129, 255, 0.12);
+  box-shadow:
+    0 26px 80px rgba(0, 0, 0, 0.45),
+    0 0 55px rgba(157, 129, 255, 0.12);
   transform: rotate(-3deg);
 }
 
@@ -465,7 +480,11 @@ img {
   width: 17px;
   height: 17px;
   background: var(--lime);
-  box-shadow: 8px 0 var(--lime), 0 8px var(--lime), 8px 8px var(--lime), 4px 4px #8dc94c;
+  box-shadow:
+    8px 0 var(--lime),
+    0 8px var(--lime),
+    8px 8px var(--lime),
+    4px 4px #8dc94c;
   transform: scale(0.65);
 }
 
@@ -486,7 +505,11 @@ img {
 
 .token-two span {
   background: var(--pink);
-  box-shadow: 8px 0 var(--pink), 0 8px var(--pink), 8px 8px var(--pink), 4px 4px #bf6095;
+  box-shadow:
+    8px 0 var(--pink),
+    0 8px var(--pink),
+    8px 8px var(--pink),
+    4px 4px #bf6095;
 }
 
 .art-label {
@@ -516,7 +539,11 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   background:
-    radial-gradient(ellipse at 12% 18%, rgba(169, 139, 255, 0.06), transparent 31%),
+    radial-gradient(
+      ellipse at 12% 18%,
+      rgba(169, 139, 255, 0.06),
+      transparent 31%
+    ),
     var(--bg-soft);
 }
 
@@ -562,8 +589,14 @@ img {
   padding: 25px 28px;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.012)
+  );
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .path-card:hover {
@@ -675,16 +708,16 @@ img {
 
 .about-avatar {
   flex: 0 0 auto;
-  width: 58px;
-  height: 58px;
+  width: 155px;
+  height: 155px;
   overflow: hidden;
-  border: 2px solid rgba(184, 161, 255, 0.55);
+  border: 2px solid rgba(239, 161, 255, 0.55);
   border-radius: 50%;
 }
 
 .about-avatar img {
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   object-fit: cover;
 }
 
@@ -1024,8 +1057,16 @@ img {
   overflow: hidden;
   isolation: isolate;
   background:
-    radial-gradient(ellipse at 50% 43%, rgba(184, 161, 255, 0.1), transparent 36%),
-    radial-gradient(ellipse at 85% 80%, rgba(242, 140, 200, 0.055), transparent 34%),
+    radial-gradient(
+      ellipse at 50% 43%,
+      rgba(184, 161, 255, 0.1),
+      transparent 36%
+    ),
+    radial-gradient(
+      ellipse at 85% 80%,
+      rgba(242, 140, 200, 0.055),
+      transparent 34%
+    ),
     var(--bg);
 }
 
@@ -1033,7 +1074,10 @@ img {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.09) 1px,
+    transparent 1px
+  );
   background-position: center;
   background-size: 34px 34px;
   content: "";
